@@ -708,13 +708,13 @@ footer{
         line-height: 1.25rem;
         letter-spacing: 0.04em;
         text-align: center;
-        padding-bottom: 30%;
+        padding-bottom: 40%;
     }
     .sec2Three{
         width: 35%;
         height: 15.3rem;
         position: absolute;
-        top: 23rem;
+        top: 24rem;
         left: 30%;
     }
     .sec3{
@@ -810,7 +810,7 @@ footer{
     }
     .ca{
         font-family: GT Ultra;
-        font-size: 1rem;
+        font-size: .7rem;
         font-weight: 700;
         line-height: 1.31rem;
         letter-spacing: -0.1rem;
