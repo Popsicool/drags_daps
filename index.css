@@ -1,0 +1,878 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none
+}
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+@font-face{
+    font-family: 'Chinese Dragon';
+    src: url('./ChineseDragon.ttf');
+}
+
+@font-face{
+    font-family: 'GT Ultra';
+    src: url('./GTUltra-Black.otf');
+}
+
+button{
+    cursor: pointer;
+}
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.background-overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .9);
+    z-index: 1;
+}
+
+
+video {
+    object-fit: cover;
+    width: 100%; /* Ensure the video takes up the entire width of its container */
+    height: 100%;
+    object-fit: cover;
+}
+.frame1{
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.frame1inner{
+    width:48%;
+    padding-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 10%; */
+    position: relative;
+    display: flex;
+}
+.explore{
+    background-color: #A7642A;
+    width: 20%;
+    border: .0625rem solid #FFFFFF;
+    text-align: center;
+    font-family: Gotu;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2.06rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: .3125rem;
+}
+
+
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5% 3% 8%;
+}
+
+
+.nlChart{
+    background-color: #A7642A;
+    font-family: Gotu;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: .875rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+    border-radius: .3125rem;
+    border: none;
+    padding: 1.25rem 1.06rem 1.25rem 1.06rem;
+}
+.nlBuy{
+    font-family: Gotu;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: .875rem;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: #0f0f0f;
+    border: none;
+    color: #ffffff;
+    padding: 1.25rem 1.06rem 1.25rem 1.06rem;
+}
+.navRight{
+    display: flex;
+    width: 6.3rem;
+    justify-content: space-between;
+}
+.socIcNav{
+    width: 2.69rem;
+    height: 2.69rem;
+}
+.socIcNav2{
+    width: 2.56rem;
+    height: 2.06rem;
+}
+.socIcNav img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.cword{
+    font-family: Gotu;
+    font-size: 1.56rem;
+    font-weight: 400;
+    line-height: 2.62rem;
+    letter-spacing: 0.16em;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+.cdragon{
+    font-family: Chinese Dragon;
+    color: #ffffff;
+    font-size: 11rem;
+    font-weight: 400;
+    line-height: 11rem;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.cunleash{
+    font-family: Gotu;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.68rem;
+    letter-spacing: 0.45em;
+    text-align: left;
+    color: #FFFFFF;
+}
+.frame1innerRight{
+    width: 46%;
+    height: 100%;
+    position: absolute;
+    right: 0.625rem;
+    top: -2.5rem;
+}
+.frame1innerRight > img{
+    width: 100%;
+    height: 100%;
+}
+.sec1{
+    width: 90%;
+    background-color: #070707;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+}
+
+.the-drag-text-img{
+    display: flex;
+}
+.the-first{
+    font-family: Chinese Dragon;
+    width: 73%;
+    font-size:4.56rem;
+    font-weight: 400;
+    line-height:4.56rem;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.the-drag-img{
+    width: 15%;
+    margin-left: -10%;
+    margin-top: -3%;
+}
+.the-drag-img img{
+    width: 100%;
+    height: 100%;
+}
+.the-second{
+    font-family: Gotu;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    letter-spacing: 0.04em;
+    text-align: left;
+    width: 77%;
+}
+.gstarted{
+    width: 16%;
+    border: .0625rem solid #ffffff;
+    background-color: #A7642A;
+    font-family: Gotu;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2.06rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+    border-radius: .3125rem;
+    padding: 0.625rem 2.06rem 0.625rem 2.06rem;
+    margin: 2% 0;
+}
+.wdragon{
+    color: #A7642A;
+}
+.bbtns{
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border-radius: .3125rem;
+    border: none;
+    font-family: Gotu;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2.06rem;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 0.75rem 1.06rem 0.75rem 1.06rem;
+    margin-right: .3%;
+    cursor: pointer;
+}
+
+#cpy{
+    cursor: pointer;
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.sec2{
+    margin-top: 7%;
+    position: relative;
+    padding: 0 5%;
+}
+.sec2One, .sec2Two{
+    display: flex;
+    justify-content: end;
+}
+
+.sec2oneInner, .sec2TwoInner{
+    width: 60%;
+    padding-top: 2%;
+}
+
+.oVision{
+    text-align: start;
+    font-family: Chinese Dragon;
+    font-size: 3.125rem;
+    font-weight: 400;
+    line-height: 3.125rem;
+    letter-spacing: -0.1rem;
+    color: #A7642A;
+}
+.oVision2{
+    font-family: Gotu;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #ffffff;
+}
+.sec2Two{
+    border: .0625rem solid #ffffff;
+    padding: 2% 0;
+    margin-top: 1%;
+    border-radius: 1.5rem 0rem 1.5rem 1.5rem;
+}
+.birthof{
+    font-family: Chinese Dragon;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    letter-spacing: -0.1rem;
+    text-align: left;
+    color: #ffffff;
+}
+.birthof2{
+    font-family: Gotu;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #ffffff;
+}
+
+.sec2Three{
+    width: 31%;
+    height: 40.6rem;
+    position: absolute;
+    top: -3.125rem;
+}
+
+.sec2Three img{
+    width: 100%;
+    height: 100%;
+}
+.sec3{
+    margin-top: 15%;
+    display: flex;
+    padding: 0 5%;
+}
+
+.sec3Left{
+    width: 48%;
+}
+.setApart{
+    color: #A7642A;
+    font-family: Chinese Dragon;
+    font-size: 3.125rem;
+    font-weight: 400;
+    line-height: 3.125rem;
+    letter-spacing: -0.1rem;
+    text-align: left;
+}
+.apart1{
+    font-family: Gotu;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #ffffff;
+}
+.cfu{
+    color: #DAD3A6;
+}
+.sec3Right{
+    width: 50%;
+    height: 40.6rem;
+}
+.sec3Right img{
+    width: 100%;
+    height: 100%;
+}
+.bBtn, .bBtn2{
+    background-color: #A7642A;
+    color: #FFFFFF;
+    border: .0625rem solid #ffffff;
+    padding: 0.625rem 2.06rem 0.625rem 2.06rem;
+    margin-right: 1%;
+    border-radius: .3125rem;
+    font-family: Gotu;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2.06rem;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.bBtn2{
+    background-color: transparent;
+}
+
+
+.tokeni{
+    display: grid;
+    place-items: center;
+    padding:10% 0;
+}
+
+.tokey{
+    font-family: GT Ultra;
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 2.75rem;
+    letter-spacing: -0.1rem;
+    text-align: center;
+    color: #FFFEF8;
+}
+.buySell{
+    display: flex;
+    gap: 5%;
+    justify-content: space-between;
+    padding-top: 5%;
+    color: #FFFEF8;
+}
+.hBuy{
+    display: grid;
+    place-items: center;
+}
+.bTa, .bTa2{
+    font-family: GT Ultra;
+    font-size: 1.875rem;
+    font-weight: 900;
+    line-height: 2.19rem;
+    letter-spacing: -0.1rem;
+    text-align: center;
+    width: 13rem;
+    height: 5.43rem;
+    background-color: #111111;
+    padding: 1.625rem 1.31rem 1.625rem 1.31rem;
+    border-radius: 1.5rem;
+    gap: 0.625rem;
+}
+.bTa2{
+    width: 15.75rem;
+    height: 5.43rem;
+    margin-top: 2%;
+    justify-self: center;
+    align-self: center;
+    color: #FFFEF8;
+}
+.bhH{
+    font-family: GT Ultra;
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 2.75rem;
+    letter-spacing: -0.1rem;
+    text-align: center;
+    color: #FFFEF8;
+}
+
+.dec{
+    padding: 3% 10%;
+    margin: 1% 5%;
+    border-radius: 1.5rem;
+    border: .3125rem solid #ffffff;
+    font-family: GT Ultra;
+    font-size: 1.375rem;
+    font-weight: 300;
+    line-height: 3rem;
+    letter-spacing: -0.1rem;
+    text-align: left;
+    color: #DAD3A6;
+    z-index: 1000;
+    background-color: #361608;
+}
+.dotdot{
+    list-style: circle;
+    color: #DAD3A6;
+    font-family: GT mid;
+}
+.ca{
+    font-family: GT Ultra;
+    font-size: 1.625rem;
+    font-weight: 900;
+    line-height: 1.81rem;
+    letter-spacing: -0.1rem;
+    text-align: center;
+    padding: 2% 0;
+    color: #FFFEF8;
+}
+
+
+.sec5{
+    display: flex;
+    margin: 5%;
+    justify-content: space-between;
+}
+.sec5Left,  .sec5Right{
+    width:48%;
+}
+.secCharts{
+    display: grid;
+    place-items: center;
+    border: .0625rem solid #ffffff;
+    height: 16.58rem;
+    margin-top: 3%;
+}
+.secInner{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+.secC{
+    font-family: Montserrat;
+    font-size: 3.38rem;
+    font-weight: 800;
+    line-height: 3.5rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+    align-self: center;
+}
+.secChartImg{
+    width: 11.43rem;
+    height: 11.43rem;
+}
+.secChartImg2{
+    width: 9.19rem;
+    height: 9.19rem;
+}
+.secChartImg3{
+    width: 8.88rem;
+    height: 7.19rem;
+}
+.secChartImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.bigMax{
+    border: .0625rem solid #ffffff;
+    padding: 10%;
+    margin-top: 3%;
+}
+.maxRow{
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    margin-bottom: 3%;
+}
+.mSp{
+    font-family: Montserrat;
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 3.5rem;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.mSq{
+    font-family: Montserrat;
+    font-size: 1.69rem;
+    font-weight: 500;
+    line-height: 2.06rem;
+    letter-spacing: 0em;
+    text-align: left;
+    border: .0625rem solid #FFFFFF;
+    padding: 3%;
+}
+.adCpy{
+    border: .0625rem solid #FFFFFF;
+    padding: 3%;
+    cursor: pointer;
+}
+
+footer{
+    display: grid;
+    place-items: center;
+}
+.copyright{
+    font-family: Montserrat;
+    font-size: 1.06rem;
+    font-weight: 500;
+    line-height: 1.875rem;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 10%;
+}
+
+.nav2{
+    display: none;
+}
+.cAT2{
+    display: none;
+}
+.tM{
+    display: none;
+}
+@media screen and (max-width: 500px){
+    .frame1inner{
+        width: 77%;
+    }
+    
+    .tM{
+        display: grid;
+    }
+    .sIcon{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 10%;
+    }
+    .sIcon img{
+        width: 100%;
+        height: 100%;
+    }
+    .nav1{
+        display: none;
+    }
+    .nav2{
+        display: grid;
+        place-items: center;
+        padding: 5% 0;
+    }
+    .nav21, .nav22{
+        display: flex;
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+    .ayM{
+        font-family: Gotu;
+        font-size: .6rem;
+        font-weight: 400;
+        line-height: 1rem;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #ffffff;
+        margin-right: 10%;
+        padding-top: 10%;
+    }
+    .the-drag-img{
+        display: none;
+    }
+    .the-first{
+        width: 100%;
+        font-family: Chinese Dragon;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 2rem;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .the-second{
+        width: 100%;
+        font-family: Gotu;
+        font-size: .75rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+        letter-spacing: 0.04em;
+        text-align: left;
+        padding-top: 5%;
+    }
+    .gstarted{
+        font-family: Gotu;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.68rem;
+        letter-spacing: 0em;
+        text-align: center;
+        width: 50%;
+        padding: .5rem;
+    }
+    .bbtns{
+        font-family: Gotu;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.68rem;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 2%;
+
+    }
+    .cAc{
+        width: 100%;
+    }
+    .cAT2{
+        display: block;
+    }
+    .cAT{
+        display: none;
+    }
+    .sec2oneInner, .sec2TwoInner{
+        width: 100%;
+        padding-top: 2%;
+    }
+    .oVision{
+        font-family: Chinese Dragon;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 2rem;
+        letter-spacing: -0.1rem;
+        text-align: center;
+    }
+    .oVision2{
+        font-family: Gotu;
+        font-size: .75rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+        letter-spacing: 0.04em;
+        text-align: center;
+
+    }
+    .sec2Two{
+        border: none;
+        border-top: .0625rem solid #ffffff;
+        border-bottom: .0625rem solid #ffffff;
+        padding: 2% 0;
+        margin-top: 1%;
+        width: 100%;
+        border-radius: 0;
+    }
+    .birthof{
+        font-family: Chinese Dragon;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 2rem;
+        letter-spacing: -0.1rem;
+        text-align: center;
+    }
+    .birthof2{
+        font-family: Gotu;
+        font-size: .75rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+        letter-spacing: 0.04em;
+        text-align: center;
+        padding-bottom: 30%;
+    }
+    .sec2Three{
+        width: 35%;
+        height: 15.3rem;
+        position: absolute;
+        top: 23rem;
+        left: 30%;
+    }
+    .sec3{
+        margin-top: 40%;
+        display: grid;
+        padding: 0 5%;
+    }
+    .setApart{
+        font-family: Chinese Dragon;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 2rem;
+        letter-spacing: -0.1rem;
+        text-align: center;
+    }
+    .sec3Left{
+        width: 100%;
+    }
+    .apart1{
+        font-family: Gotu;
+        font-size: .75rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+        letter-spacing: 0.04em;
+        text-align: left;
+    }
+    .indaboski{
+        text-align: center;
+    }
+    .bBtn, .bBtn2{
+        font-family: Gotu;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.69rem;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .sec3Right{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 20rem;
+    }
+    .tokey{
+        font-family: GT Ultra;
+        font-size: 2.25rem;
+        font-weight: 900;
+        line-height: 2.5rem;
+        letter-spacing: -0.1rem;
+        text-align: center;
+    }
+    .buySell{
+        display: grid;
+        padding-top: 5%;
+        color: #FFFEF8;
+    }
+    .bTa, .bTa2{
+        font-family: GT Ultra;
+        font-size: 1.75rem;
+        font-weight: 900;
+        line-height: 1.94rem;
+        letter-spacing: -0.1rem;
+        text-align: center;
+        padding: 1.25rem, 1.31rem, 1.25rem, 1.31rem;
+        margin-top: 5%;
+    }
+    .bhH{
+        font-family: GT Ultra;
+        font-size: 1.5rem;
+        font-weight: 900;
+        line-height: 1.625rem;
+        letter-spacing: -0.1rem;
+        text-align: center;
+
+    }
+    .dec{
+        padding: 3% 10%;
+        border: .2rem solid #ffffff;
+        margin: 1% 5%;
+        border-radius: 1.5rem;
+        width: 90vw;
+        font-family: GT Ultra;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 2rem;
+        letter-spacing: -0.1rem;
+        text-align: center;
+
+    }
+    .dotdot{
+        list-style: none;
+        padding-bottom: 2%;
+    }
+    .ca{
+        font-family: GT Ultra;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.31rem;
+        letter-spacing: -0.1rem;
+        text-align: center;
+    }
+    .sec5{
+        display: grid;
+        width: 100%;
+    }
+    .sec5Left, .sec5Right{
+        width: 80vw;
+        margin: 2%;
+    }
+    .secCharts{
+        width: 100%;
+        display: grid;
+        place-items: center;
+        border: .0625rem solid #ffffff;
+        height: 7.3rem;
+        margin-top: 3%;
+    }
+    .secC, .mSp, .mSq{
+        font-family: Montserrat;
+        font-size: 2rem;
+        font-weight: 800;
+        line-height: 3.5rem;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .maxRow{
+        display: grid;
+    }
+    .mSq{
+        font-size: 1rem;
+        line-height: 2rem;
+        text-align: center;
+        width: 150%;
+    }
+    .secInner{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .secChartImg{
+        height: 4.75rem;
+        width: 4.75rem;
+    }
+    .secChartImg2, .secChartImg3{
+        width: 4rem;
+        height: 4rem;
+    }
+    .secChartImg2 img, .secChartImg3 img{
+        width: 100%;
+        height: 100%;
+    }
+    .sAp,.mSp{
+        font-size: 1.5rem;
+    }
+    .maxRow{
+        width: 100%;
+    }
+    .tW{
+        display: none;
+    }
+}
