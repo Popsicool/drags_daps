@@ -394,7 +394,7 @@ video {
     display: flex;
     gap: 5%;
     justify-content: space-between;
-    padding-top: 5%;
+    padding-top: 2%;
     color: #FFFEF8;
 }
 .hBuy{
@@ -418,10 +418,13 @@ video {
 .bTa2{
     width: 15.75rem;
     height: 5.43rem;
-    margin-top: 2%;
+    margin-top: 1%;
     justify-self: center;
     align-self: center;
     color: #FFFEF8;
+}
+.bTa3{
+    width: 25rem;
 }
 .bhH{
     font-family: GT Ultra;
@@ -507,6 +510,9 @@ video {
     width: 8.88rem;
     height: 7.19rem;
 }
+.tW{
+    margin-top: 10%;
+}
 .secChartImg img{
     width: 100%;
     height: 100%;
@@ -514,7 +520,7 @@ video {
 
 .bigMax{
     border: .0625rem solid #ffffff;
-    padding: 10%;
+    padding: 3%;
     margin-top: 3%;
 }
 .maxRow{
@@ -530,6 +536,7 @@ video {
     line-height: 3.5rem;
     letter-spacing: 0em;
     text-align: left;
+    width: 50%;
 }
 .mSq{
     font-family: Montserrat;
@@ -902,6 +909,9 @@ footer{
     }
     .sAp,.mSp{
         font-size: 1.5rem;
+    }
+    .mSp{
+        width: 100%;
     }
     .maxRow{
         width: 100%;
