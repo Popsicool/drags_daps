@@ -575,7 +575,41 @@ footer{
     .frame1inner{
         width: 77%;
     }
-    
+    .cword{
+        font-family: Gotu;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.68rem;
+        letter-spacing: 0.16em;
+        text-align: left;
+    }
+    .cdragon{
+        font-family: Chinese Dragon;
+        font-size: 4.87rem;
+        font-weight: 400;
+        line-height: 4.87rem;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .cunleash{
+        font-family: Gotu;
+        font-size: .68rem;
+        font-weight: 400;
+        line-height: 1.12rem;
+        letter-spacing: 0.3em;
+        text-align: left;
+    }
+    .explore{
+        font-family: Gotu;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.68rem;
+        letter-spacing: 0em;
+        text-align: center;
+        width: 50%;
+        padding: 3%;
+        margin-top: 2%;
+    }
     .tM{
         display: grid;
     }
