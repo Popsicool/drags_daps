@@ -9,10 +9,11 @@ button.addEventListener('click', async () => {
     }
   });
 
+  const txt2 = document.querySelector('#copyText2').innerText
   const button2 = document.querySelector('#ccpp')
   button2.addEventListener('click', async () => {
       try {
-        await navigator.clipboard.writeText(txt);
+        await navigator.clipboard.writeText(txt2);
         alert("Address copied to clipboard")
       } catch (err) {
         console.error(err.name, err.message);
